@@ -4,6 +4,14 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 
 *, *:before, *:after { box-sizing: inherit; }
 
+header {
+  height: calc(40vh - 50px);
+}
+
+main {
+  height: calc(60vh - 50px);
+}
+
 
 h1,
 h2,
@@ -56,7 +64,7 @@ select {
 
 .pokeCard {
   display: block;
-  margin: 50px auto;
+  margin: 0 auto;
   width: 300px;
   border: 10px solid black;
   background-color: rgb(238, 52, 39);
@@ -71,9 +79,21 @@ p {
 footer {
   height: 100px;
   background-color: rgb(54, 94, 170);
-  display: flex;
+}
+
+footer p {
+  justify-content: center;
+  align-items: center;
+  padding-top: 40px;
+  margin-top: 0;
 }
 
 body {
   background-color: linen;
+}
+
+.wrapper {
+  width: 85%;
+  max-width: 1280px;
+  margin: 0 auto;
 }
